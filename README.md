@@ -1,5 +1,4 @@
-# Example Package
+python setup.py sdist bdist_wheel
+python -m twine upload --skip-existing --repository testpypi dist/*
 
-This is a simple example package. You can use
-[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
-to write your content."# python_packages" 
+https://packaging.python.org/tutorials/packaging-projects/

@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="kaggle_uploader-screamatthewind",
-    version="0.0.1",
+    version="0.0.3",
     author="screamatthewind",
     author_email="4452527+screamatthewind@users.noreply.github.com",
     description="A small example package",

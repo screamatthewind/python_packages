@@ -79,7 +79,7 @@ def init_on_kaggle(username, api_key):
     cmd = f"chmod 600 {KAGGLE_CONFIG_DIR}/kaggle.json"
     output = subprocess.check_output(cmd.split(" "))
     output = output.decode(encoding='UTF-8')
-    print(output)
+    # print(output)
 
 def exec_command(cmd):
     try:
@@ -88,13 +88,13 @@ def exec_command(cmd):
         print(f"error code: {e.returncode}")
         raise Exception(e.output.decode(encoding = 'UTF-8'))
     output = output.decode(encoding = 'UTF-8')
-    print(output)
+    # print(output)
 
 def add_resource(path, description):
     global base_path
     assert base_path is not None, f"base_path must be set before adding resourcse. current: {base_path}"
     base_path = os.path.abspath(base_path)
-    print(base_path)
+    # print(base_path)
     resources.append({"path": f"{base_path}/{path}", "description": description})
 
 def validate_metadata() -> (bool, str):
